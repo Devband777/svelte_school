@@ -1,11 +1,9 @@
 <script>
-	import Herobg from "$lib/images/layer1_back.png";
+	import Herobg from "$lib/images/aboutus.png";
 	import Videbg from "$lib/images/video.png";
 	import BGgradient from "$lib/images/BGGradient.png";
 	import School from "$lib/images/school.png";
 	import Photo from "$lib/images/img1.png";
-	import Student1 from "$lib/images/student1.png";
-	import Student2 from "$lib/images/student2.png";
 	import logo from "$lib/images/Logo.png";
 	import Video1 from "$lib/images/Video1.png";
 	import Book from "$lib/images/book1.png";
@@ -18,31 +16,33 @@
 </script>
 
 <svelte:head>
-	<title>Homepage</title>
+	<title>About us</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
-	<div class="homepage">
+	<div class="aboutus">
 		<div class="container">
 			<div class="row">
-				<div class="column">
+				<div class="column herobg" style="background:url('{Herobg}');width:100%;height:800px;">
 					<div class="row">
 						<div class="column1">
 							<div class="row">
-								<div class="column"><img src={logo} style="position:absolute;left:5%;top:4%"/></div>
-								<div class="column"><button style="position:absolute;left:70%;top:4%;display:flex;flex-direction:row;justify-content:center;align-items:center;padding:12px 24px;gap: 10px;"><p style="width: 85px;height: 16px;font-family: 'Suisse Intl';	font-style: normal;	font-weight: 500;font-size: 16px;line-height: 100%;color: #FFFFFF;flex: none;order: 0;flex-grow: 0;">Virtual</p></button></div>
-								<div class="column"><button style="position:absolute;left:80%;top:4%;display:flex;flex-direction:row;justify-content:center;align-items:center;padding: 12px 24px;gap: 10px;width: 105px;height: 40px;background: #FFFFFF;border-radius: 100px;font-style:white;">Enquiry</button></div>
+								<div class="column"><img src={logo} class="logo"/></div>
+								<div class="column"><button class="btn_virtual btn_virtual_letter">Virtual</button></div>
+								<div class="column"><button class="btn_enquiry btn_enquiry_letter">Enquiry</button></div>
 							</div>
 						</div>
-						<div class="column1">
-							<p style="width: 600px;height: 140px;font-family: 'Suisse Intl';font-style: normal;font-weight: 400;font-size: 100px;line-height: 140%;color: white;flex: none;order: 1;flex-grow: 0;position:absolute;left:4%; top:8%;">The #1 <br/><img src={Student1}/><img src={Student2} style="margin-left: -2%;"/>School for performers</p>
-						</div>
-						<div class="column">
-							<img src={Herobg}/>
+						<div class="column1 hero_intro">
+							<div class="row">
+								<p class="intro_letter">Our mission has meaning</p>
+							</div>
+							<div class="row">
+								<p class="explain_letter">Empower every child's potential through innovative education, fostering a diverse and respectful community of learners who promote reflection and proactiv</p>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="coloumn">
-					<div style="background:#A6D6C9;width:100%;height:auto;border-radius: 48px;margin-top:-10%;transform-y:10px">
+					<div style="background:#A6D6C9;width:100%;height:auto;border-radius: 48px;margin-top:-5%;position:absolute">
 						<div class="row">
 							<div class="column1" style="margin-left:-5%;width:50%;height: 160px;left: -644px;top: 72px;">
 								<p style="font-family: 'Suisse Intl';font-style: normal;font-weight: 40;font-size: 100px;line-height: 100%;color: #FFFFFF;">or creators</p>
@@ -204,11 +204,118 @@
 		</div>
 	</div>
 <style lang="scss">
-	.homepage{
+	.aboutus{
+		.logo{
+			width: 206px;
+			height: 32px;
+			position: absolute;
+			flex: none;
+			order:0;
+			flex-grow: 0;
+			margin-top: 5%;
+			margin-left:3%;
+		}
+		.herobg{
+			width:100%;
+			height:100%;
+			position: relative;
+		}
+		.hero_intro{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px;
+			gap: 40px;
+			position: absolute;
+			width: 470px;
+			height: 286px;
+			left: 60px;
+			top: 306px
+		}
+		.intro_letter{
+			width: 600px;
+			height: 140px;
+			font-family: 'Suisse Intl';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 100px;
+			line-height: 140%;
+			color: white;
+			flex: none;
+			order: 1;
+			flex-grow: 0;
+			position:absolute;
+			left:4%;
+			top:8%;
+		}
+		.explain_letter{
+			width: 470px;
+			height: 112px;
+			font-family: 'Suisse Intl';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 140%;
+			color: #FFFFFF;
+			flex: none;
+			order: 1;
+			flex-grow: 0;
+		}
+		.btn_virtual{
+			position:absolute;
+			left:70%;
+			top:4%;
+			display:flex;
+			flex-direction:row;
+			justify-content:center;
+			align-items:center;
+			margin-top: 3%;
+			gap: 10px;
+		}
+		.btn_virtual_letter{
+			width: 85px;
+			height: 16px;
+			font-family: 'Suisse Intl';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 100%;
+			color: #FFFFFF;
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+		}
+		.btn_enquiry{
+			position:absolute;
+			left:80%;
+			top:4%;
+			display:flex;
+			flex-direction:row;
+			justify-content:center;
+			align-items:center;
+			margin-top: 3%;
+			gap: 10px;
+			width: 105px;
+			height: 40px;
+			background: #FFFFFF;
+			border-radius: 100px;
+			font-style:white;
+		}
+		.btn_enquiry_letter{
+			width: 57px;
+			height: 16px;
+			font-family: 'Suisse Intl';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 100%;
+			color: #1E1515;
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+		}
 		.container {
 		position: absolute;
-		left:0%;
-		top:-10%;
 		}
 		.row:after {
 			content: "";
@@ -217,12 +324,11 @@
 		}
 		.column1{
 			float: left;
-			width:1%;
-			padding: 10%;
+			width:100%;
 		}
 		.column {
 			float: down;
-			width: 25%;
+			width: 100%;
 		}	
 		* {
 			box-sizing: border-box;
