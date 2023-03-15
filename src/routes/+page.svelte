@@ -10,6 +10,7 @@
 	import Burger from "$lib/images/Burger.png"
 	import Video1 from "$lib/images/Video1.png";
 	import Book from "$lib/images/book1.png";
+	import arrow from "$lib/images/Arrow.png";
 </script>
 
 <svelte:head>
@@ -96,13 +97,22 @@
 					</div>
 				</div>
 			</div>
+			<div class="column" style="position: absolute; margin-top: -10%;">
+				<div style="background:#A6D6C9; width:400%; height:auto;border-radius: 48px;z-index:10;">
+					<div style="display: flex;flex-direction: column;align-items: center;padding: 0px;gap: 64px;left: 172px;top: 128px;">
+						<h2>Upcoming Events</h2>
+						<div class="event_btn">
+							<span>See all events<img src={arrow} width=28px height=28px style="flex: none;order: 1;flex-grow: 0;top:-3px;"/></span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-<style>
-	* {
-		box-sizing: border-box;
-	}
+<style lang="sass">
 	.container {
+		box-sizing: border-box;
 		position: absolute;
 		left:9%;
 	}
@@ -147,5 +157,32 @@
 		height: 100%;
 		top: 0;
 		display: block;
+	}
+	h2 {
+		font-family: 'Suisse Intl';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 56px;
+		line-height: 120%;
+		color: #254B6A;
+	}
+	.event_btn {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px 10px 10px 24px;
+		gap: 8px;
+		background: #DE8A2E;
+		border-radius: 24px;
+		flex: none;
+		order: 1;
+		flex-grow: 0;	
+	}
+	span {
+		color: #FFFFFF;
+		font-family: 'Suisse Intl';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
 	}
 </style>
