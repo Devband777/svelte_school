@@ -7,6 +7,7 @@
 	import Student1 from "$lib/images/student1.png";
 	import Student2 from "$lib/images/student2.png";
 	import logo from "$lib/images/Logo.png"
+	import Burger from "$lib/images/Burger.png"
 </script>
 
 <svelte:head>
@@ -22,6 +23,7 @@
 							<div class="column"><img src={logo} style="position:absolute;left:5%;top:4%"/></div>
 							<div class="column"><button style="position:absolute;left:70%;top:4%;display:flex;flex-direction:row;justify-content:center;align-items:center;padding:12px 24px;gap: 10px;"><p style="width: 85px;height: 16px;font-family: 'Suisse Intl';	font-style: normal;	font-weight: 500;font-size: 16px;line-height: 100%;color: #FFFFFF;flex: none;order: 0;flex-grow: 0;">Virtual</p></button></div>
 							<div class="column"><button style="position:absolute;left:80%;top:4%;display:flex;flex-direction:row;justify-content:center;align-items:center;padding: 12px 24px;gap: 10px;width: 105px;height: 40px;background: #FFFFFF;border-radius: 100px;">Enquiry</button></div>
+							<div class="column"><img src={Burger} style="position:absolute;left:90%;top:4%"/></div>
 						</div>
 					</div>
 					<div class="column1">
