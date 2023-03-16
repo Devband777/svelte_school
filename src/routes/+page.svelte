@@ -11,6 +11,7 @@
 	import Video1 from "$lib/images/Video1.png";
 	import Book from "$lib/images/book1.png";
 	import arrow from "$lib/images/Arrow.png";
+	import Jobcard from '../component/jobcard.svelte';
 </script>
 
 <svelte:head>
@@ -19,6 +20,7 @@
 </svelte:head>
 	<div class="container">
 		<div class="row">
+<<<<<<< HEAD
 			<div class="column">
 				<div class="row">
 					<div class="column1">
@@ -108,9 +110,12 @@
 					</div>
 				</div>
 			</div>
+=======
+			<Jobcard/>
+>>>>>>> d506443 (2023-03-16/Bruce)
 		</div>
 	</div>
-<style lang="sass">
+<style lang="">
 	.container {
 		box-sizing: border-box;
 		position: absolute;
@@ -131,7 +136,7 @@
 	}
 	.column {
 		float: down;
-		width: 25%;
+		width: 100%;
 	}
 	.hero-bgimage{
 		position: absolute;
@@ -166,6 +171,33 @@
 		line-height: 120%;
 		color: #254B6A;
 	}
+	.events {
+		box-sizing: border-box;
+		position: absolute;
+		
+		align-items: center;
+	}
+	.event {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 24px;
+		gap: 305px;
+		isolation: isolate;
+		width: 200%;
+		height: 200px;
+		background: #FFFFFF;
+		border-radius: 24px;
+	}
+	.event_detail {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0px;
+		gap: 24px;
+		width: 573px;
+		height: 152px;
+	}
 	.event_btn {
 		display: flex;
 		flex-direction: column;
@@ -179,10 +211,17 @@
 		flex-grow: 0;	
 	}
 	span {
-		color: #FFFFFF;
+		float: left;
 		font-family: 'Suisse Intl';
 		font-style: normal;
 		font-weight: 500;
 		font-size: 16px;
+		line-height: 100%;
+		text-align: center;
+		color: #FFFFFF;
+		flex: none;
+		order: 0;
+		flex-grow: 0;
 	}
+	
 </style>
