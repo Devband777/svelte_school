@@ -6,14 +6,10 @@
 	import Photo from "$lib/images/img1.png";
 	import Student1 from "$lib/images/student1.png";
 	import Student2 from "$lib/images/student2.png";
-<<<<<<< HEAD
 	import logo from "$lib/images/Logo.png"
 	import Burger from "$lib/images/Burger.png"
 	import Video1 from "$lib/images/Video1.png";
 	import Book from "$lib/images/book1.png";
-=======
-	import logo from "$lib/images/Logo.png";
->>>>>>> d506443724275a7f1ea25d9104ecea01b19c3e5d
 	import arrow from "$lib/images/Arrow.png";
 	import Jobcard from '../component/jobcard.svelte';
 </script>
