@@ -1,1 +1,164 @@
 @import '@fontsource/fira-mono';
+
+h1 {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100%;
+    color: #1E1515;
+}
+
+h2 {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    color: #1E1515;
+}
+
+h3 {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    color: #1E1515;
+}
+
+h4 {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    color: #1E1515;
+}
+
+h5 {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #1E1515;
+}
+
+.bodyR {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #1E1515;
+}
+
+.bodyM {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #1E1515;
+}
+
+.body2R {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1E1515;
+}
+
+.body2M {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1E1515;
+}
+
+.btn {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #1E1515;
+}
+
+.caption {
+    font-family: 'Suisse Intl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #1E1515;
+}
+
+.mint {
+    background: #A6D6C9;
+}
+
+.green {
+    background: #CEDA42;
+}
+
+.yellow {
+    background: #EFDB34;
+}
+
+.purple {
+    background: #8E4B98;
+}
+
+.blue {
+    background: #64A8DF;
+}
+
+.orange {
+    background: #DE8A2E;
+}
+
+.black {
+    background: #1E1515;
+}
+
+.darkblue {
+    background: #254B6A;
+}
+
+.white {
+    background: #FFFFFF;
+}
+
+.gradient {
+    background: linear-gradient(0deg, #CAEFFF 0%, #EFFFFD 23.3%, #FFF0D0 82.39%);
+}
+
+.lightred {
+    background: #FDA29B;
+}
+
+.red {
+    background: #F04438;
+}
+
+.gray300 {
+    background: #F5F5F5;
+}
+
+.gray400 {
+    background: #F9FBFA;
+}
+
+.gray200 {
+    background: #D0D5DD;
+}
+
+.gray100 {
+    background: #A8ADB5;
+}
