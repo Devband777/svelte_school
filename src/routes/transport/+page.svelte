@@ -65,7 +65,7 @@
       </div>
     </div>
   </div>
-  <Footer top_value="2410px" />
+  <Footer />
 </div>
 
 <style lang="scss">

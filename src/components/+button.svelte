@@ -13,7 +13,7 @@
   class="btn_component"
   style="--bk_color: {bk_color}; --text_color: {text_color}; --bk_color_hover: {bk_color_hover}"
   >{caption}
-  <div class="btn-icon">&#x2B95</div>
+  <spain class="btn-icon">&#x2B95</spain>
 </button>
 
 <style lang="scss">

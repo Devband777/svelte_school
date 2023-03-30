@@ -1,8 +1,6 @@
 <script>
   import Button from "../+button.svelte";
 
-  export let card_width = "";
-  export let card_height = "";
   export let card_left = "";
   export let card_top = "";
 
@@ -17,11 +15,10 @@
 </script>
 
 <div class="card" style="
-  width: {card_width};
-  height: {card_height};
   left: {card_left};
   top: {card_top};
 ">
+  <!-- svelte-ignore a11y-missing-attribute -->
   <img src={img_url} class="img" />
   <div class="heading-subtitle">
     <span class="title">{title}</span>
@@ -48,7 +45,7 @@
     gap: 48px;
     isolation: isolate;
 
-    position: absolute;
+    position: relative;
 
     /* Basic & Secondary/White */
 
@@ -98,7 +95,7 @@
 
         /* Desktop/Body Medium Desktop | 20 */
 
-        font-family: 'Suisse Intl';
+        font-family: 'Suisse Intl Bold';
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -150,8 +147,6 @@
 
     .button {
       position: absolute;
-      width: 160px;
-      height: 48px;
       left: calc(50% - 160px/2);
       top: 93%;
     }

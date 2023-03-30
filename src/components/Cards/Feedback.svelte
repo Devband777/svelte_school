@@ -30,7 +30,6 @@
   .feedback-card {
     width: 648px;
     height: 338px;
-    position: relative;
 
     /* Blur 80 | 10% */
 

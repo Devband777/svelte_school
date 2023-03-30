@@ -5,3 +5,23 @@
     font-family: 'Suisse Intl';
     src: url("../lib/fonts/SuisseIntl-Light.otf");
 }
+
+@font-face {
+    font-family: 'Suisse Intl Bold';
+    src: url("../lib/fonts/SuisseIntl-Bold.otf");
+}
+
+@font-face {
+    font-family: 'Suisse Intl Light';
+    src: url("../lib/fonts/SuisseIntl-Light.otf");
+}
+
+@font-face {
+    font-family: 'Suisse Intl Black';
+    src: url("../lib/fonts/SuisseIntl-Black.otf");
+}
+
+@font-face {
+    font-family: 'Suisse Intl Medium';
+    src: url("../lib/fonts/SuisseIntl-Medium.otf");
+}

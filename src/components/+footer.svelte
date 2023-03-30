@@ -5,13 +5,21 @@
   import IBContinuumImg from "$lib/images/img _ IB Continuum.png";
   import Student1 from "$lib/images/student1.png";
   import Student2 from "$lib/images/student2.png";
-   
-
-  export let top_value = "4335px";
 </script>
 
-<section class="footer" style="--top_value: {top_value}">
-  <section class="footer">
+<section class="footer-cta">
+  <div class="cta">
+    <div class="desc">
+      Unlock your child's <span class="students">
+        <!-- svelte-ignore a11y-missing-attribute -->
+        <img class="stu1" src={Student1} />
+        <!-- svelte-ignore a11y-missing-attribute -->
+        <img class="stu2" src={Student2} />
+      </span> potential — apply to join today!
+    </div>
+    <div><Button bk_color="#fff" text_color="#64A8DF" caption="Enquiry" /></div>
+  </div>
+  <div class="footer">
     <div class="navigation">
       <div class="email-input">
         <div class="title">Keep Learning</div>
@@ -41,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="divider" />
+    <div class="divider"></div>
     <div class="campus-info">
       <div class="left">
         <div class="logo">
@@ -75,92 +83,71 @@
         <div class="social-media" />
       </div>
     </div>
-  </section>
-  <section class="cta">
-    <div class="desc">Unlock your child's <span class="students">
-        <!-- svelte-ignore a11y-missing-attribute -->
-        <img class="stu1" src={Student1}>
-        <!-- svelte-ignore a11y-missing-attribute -->
-        <img class="stu2" src={Student2}>
-      </span> potential — apply to join today!
-      
-    </div>
-    <div><Button bk_color="#fff" text_color="#64A8DF" caption="Enquiry" /></div>
-      
-  </section>
+  </div>
 </section>
 
 <style lang="scss">
-  .footer {
-    position: absolute;
-    width: 100%;
-    height: 1080px;
-    left: 0px;
-    top: var(--top_value);
-
+  .footer-cta {
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
     .cta {
-      position: absolute;
-      left: 4.17%;
-      right: 4.17%;
-      top: 0%;
-      bottom: 64.63%;
-
+      position: relative;
+      top: 181px;
+      z-index: 2;
       box-sizing: border-box;
       padding: 72px 154px;
-
-      /* Brandcolors/Blue */
 
       background: #64a8df;
       border-radius: 48px;
 
       text-align: center;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .desc {
-        /* Desktop/H2 Desktop 56 */
+      margin: 0 auto;
 
+      width: 80%;
+      height: 382px;
+
+      .desc {
         font-family: "Suisse Intl";
         font-style: normal;
         font-weight: 400;
         font-size: 56px;
         line-height: 120%;
-        margin-bottom: 20px;
-        widows: 1013px;
-        /* or 67px */
-        /* Basic & Secondary/White */
-
+        margin-bottom: 48px;
+        width: 1013px;
         color: #ffffff;
       }
     }
 
     .footer {
-      position: absolute;
-      left: 0%;
-      right: 0%;
-      top: 17.69%;
-      bottom: 0%;
+      position: relative;
+      z-index: 1;
       width: 100%;
       height: 889px;
 
-      /* Basic & Secondary/Black */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      box-sizing: border-box;
+      padding: 60px;
 
       background: #1e1515;
       border-radius: 48px 48px 0px 0px;
 
       .navigation {
-        position: absolute;
-        display: -webkit-box;
-        display: -ms-flexbox;
+        margin-top: 170px;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         height: 228px;
-        top: 263px;
-
-        left: 4.17%;
-        right: 4.17%;
+        width: 100%;
 
         .email-input {
           -webkit-box-flex: 0;
@@ -168,8 +155,6 @@
           flex: 0 0 50%;
           width: 50%;
 
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
           -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -249,8 +234,6 @@
         }
 
         .menu {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
           -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -264,6 +247,7 @@
             padding: 0px;
             gap: 12px;
             isolation: isolate;
+            gap: 20px;
 
             color: #fafafa;
             -webkit-box-flex: 0;
@@ -308,69 +292,25 @@
         }
       }
       .divider {
-        position: absolute;
-        width: 100%;
-        height: 0px;
-        left: 0px;
-        top: 555px;
-
         border: 1px solid rgba(255, 255, 255, 0.2);
+        width: 200%;
+        margin: 65px -60px;
       }
       .campus-info {
-        position: absolute;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        top: 619px;
-        height: 206px;
-
-        left: 4.17%;
-        right: 4.17%;
-
+        width: 100%;
         .left {
           width: 50%;
-          .logo {
-            position: absolute;
-            width: 206px;
-            height: 32px;
-            left: 60px;
-            top: 0;
-          }
           div {
-            position: absolute;
-            width: 350px;
-            height: 44px;
-            left: 60px;
-            top: 55px;
-
-            /* Desktop/Body 2 Desktop | 16 */
-
             font-family: "Suisse Intl";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 140%;
-            /* or 22px */
-
             color: rgba(255, 255, 255, 0.5);
-          }
-          .ib {
-            .school {
-              position: absolute;
-              width: 56px;
-              height: 56px;
-              left: 0px;
-              top: 120px;
-            }
-            .continuum {
-              position: absolute;
-              width: 72px;
-              height: 56px;
-              left: 68px;
-              top: 120px;
-            }
+            margin-bottom: 30px;
           }
         }
         .right {
@@ -382,12 +322,6 @@
             align-items: flex-start;
             padding: 0px;
             gap: 48px;
-
-            position: absolute;
-            width: 434px;
-            height: 118px;
-            left: 50%;
-            top: 0;
 
             .campus-1 {
               h1 {
